@@ -5,21 +5,21 @@
 class Gptc < Formula
   desc "Supercharge your CLI with the power of OpenAI's GPT model (and other models too!)"
   homepage "https://github.com/junyu-w/gptc"
-  version "1.0.0"
+  version "1.1.0"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.arm?
-      url "https://github.com/junyu-w/gptc/releases/download/v1.0.0/gptc_Darwin_arm64.tar.gz"
-      sha256 "cccbdf2ce4ccd0ead2409712c6ca76075b0e178912de6dade8417e73d9b61860"
+      url "https://github.com/junyu-w/gptc/releases/download/v1.1.0/gptc_Darwin_arm64.tar.gz"
+      sha256 "bfe161939a89514861fdd15f5e77ed353f8917e6b6ae12024cd0baec1c5f467a"
 
       def install
         bin.install "gptc"
       end
     end
     if Hardware::CPU.intel?
-      url "https://github.com/junyu-w/gptc/releases/download/v1.0.0/gptc_Darwin_x86_64.tar.gz"
-      sha256 "e3e6bac7cf535b545a20e2a69f76de6c2d66028eb4fdaecd7bc6bf4564741a34"
+      url "https://github.com/junyu-w/gptc/releases/download/v1.1.0/gptc_Darwin_x86_64.tar.gz"
+      sha256 "9fe65680984e55fb1782705cd356f623a79f2461d844b0ffea7112b08614244b"
 
       def install
         bin.install "gptc"
@@ -29,16 +29,16 @@ class Gptc < Formula
 
   on_linux do
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/junyu-w/gptc/releases/download/v1.0.0/gptc_Linux_arm64.tar.gz"
-      sha256 "2d92e9a522089f05e50794cd7a36b249f6f50aba8b989539cab735e1f5f222ee"
+      url "https://github.com/junyu-w/gptc/releases/download/v1.1.0/gptc_Linux_arm64.tar.gz"
+      sha256 "14f4721aea5a74359f3be88ea04a30fad5f50a6968aedb44f2ff8a8ee0276598"
 
       def install
         bin.install "gptc"
       end
     end
     if Hardware::CPU.intel?
-      url "https://github.com/junyu-w/gptc/releases/download/v1.0.0/gptc_Linux_x86_64.tar.gz"
-      sha256 "432084645c372830be0ebd8dc4437ac37d35a954951fea8c10aac3f086d2a270"
+      url "https://github.com/junyu-w/gptc/releases/download/v1.1.0/gptc_Linux_x86_64.tar.gz"
+      sha256 "25dd59258cf65bb551a25b99d7e67e85f895e83c80b98225ba7adc061610d22c"
 
       def install
         bin.install "gptc"
